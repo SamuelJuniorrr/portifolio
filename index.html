@@ -1,38 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Seu Nome</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Samuel Junior</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #C49850;
+      --navy: #2E2E48;
+      --light: #E8EBF0;
+      --text-dark: #1F1F1F;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--navy);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--gold);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: var(--gold);
+      padding: 1rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--navy);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      color: var(--navy);
+      border-left: 5px solid var(--gold);
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      background: white;
+      border-left: 5px solid var(--gold);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1 class="logo">SeuNome</h1>
-      <nav class="menu">
-        <a href="index.html" class="active">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="projetos.html">Projetos</a>
-      </nav>
-    </div>
+    <h1>Samuel Ferreira de Paula Junior</h1>
+    <p>Analista de Dados | Integração de Sistemas | Power BI, SQL Server, Salesforce</p>
   </header>
 
-  <main class="hero">
-    <div class="container">
-      <h2>Olá, eu sou <span>Samuel Ferreira</span></h2>
-      <p>Sou Samuel Ferreira, atuo em soluções com Power BI, SQL Server, Power Apps e Power Automate. 
-Aqui compartilho projetos que ajudei a transformar através da inteligência de dados.</p>
-      <div class="cta">
-        <a href="https://www.linkedin.com/in/samueljrferreira" class="btn" target="_blank">LinkedIn</a>
-        <a href="projetos.html" class="btn btn-outline">Ver Projetos</a>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Analista de Dados com sólida experiência em projetos de transformação digital, integração de sistemas e automação de processos. Atuo com ferramentas como SQL Server, Power BI, Power Platform, Salesforce e ERP Protheus. Tenho facilidade em transitar entre áreas técnicas e operacionais, sempre focando na entrega de valor e resultados.
+      </p>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos em Destaque</h2>
+      <div class="project">
+        <h3>Implantação do Salesforce</h3>
+        <p>Atuação em análise de cargas, integrações e gestão de dashboards estratégicos para as áreas de negócios.</p>
       </div>
-    </div>
+      <div class="project">
+        <h3>Integração com WMS Senior</h3>
+        <p>Responsável por testes de integração, rotinas e processos sistêmicos entre o WMS e o ERP.</p>
+      </div>
+      <div class="project">
+        <h3>Dashboards Power BI</h3>
+        <p>Criação de dashboards interativos para controle operacional e tomada de decisão.</p>
+      </div>
+      <div class="project">
+        <h3>Power Apps Internos</h3>
+        <p>Aplicativos criados para as equipes de Cadastro e Compras, automatizando tarefas manuais.</p>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: seuemail@email.com</p>
+      <p>LinkedIn: linkedin.com/in/seu-perfil</p>
+      <p>Localização: Cidade - Estado</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
+    <p>© 2025 Samuel Ferreira de Paula Junior. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
