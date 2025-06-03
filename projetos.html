@@ -2,35 +2,64 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projetos - Samuel Ferreira</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos | Seu Nome</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <img src="https://i.imgur.com/x6qq3UO.png" alt="Samuel Ferreira" class="profile-pic">
-      <a href="#" class="linkedin-btn">LinkedIn</a>
-      <nav class="menu">
-        <a href="index.html">Início</a>
-        <a href="projetos.html">Power BI</a>
-        <a href="projetos.html">SQL Server</a>
-        <a href="projetos.html">Power Apps</a>
-        <a href="projetos.html">Power Automate</a>
-        <a href="projetos.html">Projetos</a>
-      </nav>
-    </aside>
 
-    <main class="content">
-      <h1>Projetos</h1>
-      <section class="box">
-        <ul>
-          <li><span class="icon">📈</span> Análise de vendas com Power BI (2024)</li>
-          <li><span class="icon">⚙️</span> Integração ERP + Power Automate (2023)</li>
-          <li><span class="icon">📱</span> App de controle de tarefas com Power Apps (2023)</li>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Seu<span>Nome</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html" class="active">Projetos</a></li>
         </ul>
-      </section>
-    </main>
-  </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de Projetos -->
+  <section class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Meus Projetos</h2>
+      <p class="section-subtitle">Alguns dos trabalhos que desenvolvi recentemente:</p>
+
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <div class="project-card">
+          <h3>Nome do Projeto 1</h3>
+          <p>Breve descrição do projeto com funcionalidades e tecnologias usadas.</p>
+          <a href="#" target="_blank" class="project-link">Ver projeto</a>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card">
+          <h3>Nome do Projeto 2</h3>
+          <p>Explicação breve sobre o objetivo do projeto e o que foi desenvolvido.</p>
+          <a href="#" target="_blank" class="project-link">Ver projeto</a>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project-card">
+          <h3>Nome do Projeto 3</h3>
+          <p>Resumo de funcionalidades implementadas, foco em UI ou backend, etc.</p>
+          <a href="#" target="_blank" class="project-link">Ver projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
