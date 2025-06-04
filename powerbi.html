@@ -2,157 +2,101 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Power BI | Samuel Ferreira</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-<style>
-  .project-logo {
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto 0.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-  }
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projetos | Samuel Ferreira</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
 
-  .project-card {
-    background: rgba(255 255 255 / 0.15);
-    backdrop-filter: blur(12px);
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 24px rgb(31 38 135 / 0.37);
-    transition: transform 0.2s ease;
-  }
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 220px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
 
-  .project-card:hover {
-    transform: translateY(-6px);
-  }
+    .project-card:hover {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
 
-  .project-title {
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 0.5rem 0 1rem;
-    color: #0a74da;
-  }
+    .project-logo {
+      max-width: 140px;
+      height: auto;
+      margin: 0 auto 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      border-radius: 8px;
+      display: block;
+    }
 
-  .project-description {
-    font-size: 1rem;
-    color: #444;
-    text-align: center;
-    line-height: 1.4;
-    max-width: 320px;
-    margin: 0 auto;
-  }
+    .project-logo:hover {
+      transform: scale(1.5);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      position: relative;
+      z-index: 10;
+    }
 
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap: 2rem;
-    padding-top: 2rem;
-  }
+    .project-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
 
-  .container {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  header, footer {
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  header .logo {
-    font-weight: 700;
-    font-size: 1.8rem;
-  }
-
-  header .logo span {
-    color: #0a74da;
-  }
-
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #0a74da;
-    font-weight: 600;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-</style>
+    .project-description {
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Cabeçalho -->
-  <header>
-    <div class="container nav-container">
-      <div class="logo">Samuel<span> Ferreira</span></div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="project-card">
+    <img
+      class="project-logo"
+      src="https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/imagens/dashboard1.png"
+      alt="Dashboard Vendas"
+    />
+    <h3 class="project-title">Dashboard de Vendas</h3>
+    <p class="project-description">
+      Dashboard interativo para análise de vendas por região e produto, com KPIs e gráficos detalhados para suporte à decisão.
+    </p>
+  </div>
 
-  <!-- Seção de Projetos Power BI -->
-  <section class="projects-section">
-    <div class="container">
-      <h2 class="section-title">Projetos Power BI</h2>
-      <p class="section-subtitle">Dashboards e relatórios que desenvolvi recentemente:</p>
+  <div class="project-card">
+    <img
+      class="project-logo"
+      src="https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Fretes.png"
+      alt="Relatório Financeiro"
+    />
+    <h3 class="project-title">Relatório Financeiro</h3>
+    <p class="project-description">
+      Relatório completo para monitoramento de receitas, despesas e lucro, com indicadores mensais e projeções anuais.
+    </p>
+  </div>
 
-      <div class="projects-grid">
-        <!-- Card Projeto 1 -->
-        <div class="project-card">
-          <img class="project-logo" src="https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Ocupa%C3%A7%C3%A3o.png" alt="Dashboard Vendas">
-          <h3 class="project-title">Dashboard de Vendas</h3>
-          <p class="project-description">
-            Dashboard interativo para análise de vendas por região e produto, com KPIs e gráficos detalhados para suporte à decisão.
-          </p>
-        </div>
-
-        <!-- Card Projeto 2 -->
-        <div class="project-card">
-          <img class="project-logo" src="https://app.powerbi.com/view?r=exemplo2" alt="Relatório Financeiro">
-          <h3 class="project-title">Relatório Financeiro</h3>
-          <p class="project-description">
-            Relatório completo para monitoramento de receitas, despesas e lucro, com indicadores mensais e projeções anuais.
-          </p>
-        </div>
-
-        <!-- Card Projeto 3 -->
-        <div class="project-card">
-          <img class="project-logo" src="https://app.powerbi.com/view?r=exemplo3" alt="Análise de Estoque">
-          <h3 class="project-title">Análise de Estoque</h3>
-          <p class="project-description">
-            Painel para controle de inventário, níveis de estoque e rotatividade, facilitando a tomada de decisões para reposição.
-          </p>
-        </div>
-
-        <!-- Pode adicionar mais cards conforme necessário -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+  <div class="project-card">
+    <img
+      class="project-logo"
+      src="https://raw.githubusercontent.com/seu-usuario/seu-repositorio/main/imagens/dashboard3.png"
+      alt="Análise de Estoque"
+    />
+    <h3 class="project-title">Análise de Estoque</h3>
+    <p class="project-description">
+      Painel para controle de inventário, níveis de estoque e rotatividade, facilitando a tomada de decisões para reposição.
+    </p>
+  </div>
 
 </body>
 </html>
