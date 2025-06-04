@@ -6,114 +6,133 @@
   <title>Power BI | Samuel Ferreira</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-<style>
-  .project-logo {
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto 0.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-  }
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+    }
 
-  .project-card {
-    background: rgba(255 255 255 / 0.15);
-    backdrop-filter: blur(12px);
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 24px rgb(31 38 135 / 0.37);
-    transition: transform 0.2s ease;
-  }
+    .project-logo {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      cursor: zoom-in;
+    }
 
-  .project-card:hover {
-    transform: translateY(-6px);
-  }
+    .project-card {
+      background: rgba(255 255 255 / 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgb(31 38 135 / 0.37);
+      transition: transform 0.2s ease;
+    }
 
-  .project-title {
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 0.5rem 0 1rem;
-    color: #0a74da;
-  }
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
 
-  .project-description {
-    font-size: 1rem;
-    color: #444;
-    text-align: center;
-    line-height: 1.4;
-    max-width: 320px;
-    margin: 0 auto;
-  }
+    .project-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0.5rem 0 1rem;
+      color: #0a74da;
+    }
 
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap: 2rem;
-    padding-top: 2rem;
-  }
+    .project-description {
+      font-size: 1rem;
+      color: #444;
+      text-align: center;
+      line-height: 1.4;
+      max-width: 320px;
+      margin: 0 auto;
+    }
 
-  .container {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding-top: 2rem;
+    }
 
-  header, footer {
-    text-align: center;
-    padding: 1rem 0;
-  }
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
 
-  header .logo {
-    font-weight: 700;
-    font-size: 1.8rem;
-  }
+    header, footer {
+      text-align: center;
+      padding: 1rem 0;
+    }
 
-  header .logo span {
-    color: #0a74da;
-  }
+    header .logo {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
+    header .logo span {
+      color: #0a74da;
+    }
 
-  nav a {
-    text-decoration: none;
-    color: #0a74da;
-    font-weight: 600;
-  }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
 
-  nav a:hover {
-    text-decoration: underline;
-  }
-</style>
+    nav a {
+      text-decoration: none;
+      color: #0a74da;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Modal para imagem ampliada */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      animation: zoomIn 0.3s ease;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
-<!-- fotos BI -->
-<div id="imageModal" class="modal" onclick="closeModal()">
-  <img id="modalImage" class="modal-content" />
-</div>
-
-  <script>
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImage");
-
-  document.querySelectorAll(".project-logo").forEach(img => {
-    img.addEventListener("click", function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    });
-  });
-
-  function closeModal() {
-    modal.style.display = "none";
-  }
-</script>
- <!-- FIM fotos BI --> 
 <body>
 
   <!-- Cabeçalho -->
@@ -162,11 +181,14 @@
             Painel para controle de inventário, níveis de estoque e rotatividade, facilitando a tomada de decisões para reposição.
           </p>
         </div>
-
-        <!-- Pode adicionar mais cards conforme necessário -->
       </div>
     </div>
   </section>
+
+  <!-- Modal para ampliar imagem -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImage" class="modal-content" alt="Imagem ampliada" />
+  </div>
 
   <!-- Rodapé -->
   <footer>
@@ -174,6 +196,24 @@
       <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+
+    document.querySelectorAll(".project-logo").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+      });
+    });
+
+    function closeModal() {
+      modal.style.display = "none";
+      modalImg.src = "";
+    }
+  </script>
 
 </body>
 </html>
