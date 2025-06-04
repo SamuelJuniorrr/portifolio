@@ -93,6 +93,27 @@
   }
 </style>
 </head>
+<!-- fotos BI -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImage" class="modal-content" />
+</div>
+
+  <script>
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+
+  document.querySelectorAll(".project-logo").forEach(img => {
+    img.addEventListener("click", function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+</script>
+ <!-- FIM fotos BI --> 
 <body>
 
   <!-- Cabeçalho -->
