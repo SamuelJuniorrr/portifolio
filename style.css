@@ -259,9 +259,9 @@ footer {
   object-fit: contain; /* Mantém a proporção da imagem */
 }
    .project-logo2 {
-  width: 10px;  /* Aumenta a largura da imagem */
-  height: 10px; /* Aumenta a altura da imagem */
-  /*object-fit: contain; /* Mantém a proporção da imagem */
+width: 100%;
+max-width: 120px;
+height: auto;
 }
 }
 
