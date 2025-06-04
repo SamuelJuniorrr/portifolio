@@ -32,7 +32,7 @@ ul {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  border-radius: 50%;         /* Imagem circular */
+  border-radius: 0%;         /* Imagem circular */
   border: 2px solid #7E73FF;  /* Borda com a cor do tema */
   box-shadow: 0 4px 12px rgba(126, 115, 255, 0.2);
   background-color: #1a1a1d;
@@ -257,7 +257,7 @@ footer {
     display: block;
     margin: 5% auto;
     max-width: 90%;
-    width: 500px;
+    width: 600px;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
