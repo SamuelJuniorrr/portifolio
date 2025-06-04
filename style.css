@@ -254,8 +254,8 @@ footer {
     margin: auto;
   }
   .project-logo {
-  width: 150px;  /* Aumenta a largura da imagem */
-  height: 150px; /* Aumenta a altura da imagem */
+  width: 10px;  /* Aumenta a largura da imagem */
+  height: 10px; /* Aumenta a altura da imagem */
   object-fit: contain; /* Mantém a proporção da imagem */
 }
 }
