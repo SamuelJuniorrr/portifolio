@@ -238,19 +238,77 @@ footer {
   color: #9b93ff;
 }
 
-.project-actions,
-.project-results {
-  margin: 0.5rem 0 1rem 1rem;
-  padding-left: 0;
-  color: #ccc;
-  font-size: 0.95rem;
-  line-height: 1.5;
+
+
+/* Estilo Glassmorphism */
+.project-card.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(126, 115, 255, 0.2);
+  padding: 2rem;
+  transition: transform 0.3s ease, border 0.3s ease;
 }
 
-.project-actions li,
-.project-results li {
-  margin-bottom: 0.3rem;
+.project-card.glass:hover {
+  transform: translateY(-6px);
+  border-color: #7E73FF;
+}
+
+.project-header h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.project-subtitle {
+  color: #c5c5c5;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+.project-section {
+  margin-bottom: 1.2rem;
+}
+
+.project-section h4 {
+  font-size: 1.05rem;
+  color: #7E73FF;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.project-list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.project-list li {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: start;
+}
+
+.project-list.success li {
+  color: #b2f2bb;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #7E73FF;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.project-link:hover {
+  color: #9b93ff;
 }
 
 
