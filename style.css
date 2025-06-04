@@ -34,8 +34,8 @@ header {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
-  width: 60%;
-  z-index: 600;
+  width: 100%;
+  z-index: 17000;
   padding: 1rem 0;
 }
 
