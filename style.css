@@ -311,4 +311,18 @@ footer {
   color: #9b93ff;
 }
 
+.project-description,
+.project-results {
+  color: #d0d0d0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.project-section {
+  margin-bottom: 1.5rem;
+}
+
 
