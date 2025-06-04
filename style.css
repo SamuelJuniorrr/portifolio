@@ -240,9 +240,10 @@ footer {
 }
 
 /* === POPUP MODAL === */
- .modal {
+  /* Modal para imagem */
+  .modal {
     display: none;
-    position: center;
+    position: fixed;
     z-index: 2000;
     left: 0;
     top: 0;
@@ -259,7 +260,7 @@ footer {
     max-width: 90%;
     width: 600px;
     border-radius: 16px;
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
   }
@@ -279,7 +280,6 @@ footer {
   .close:hover {
     color: #ccc;
   }
-
 
 /* === RESPONSIVO === */
  @media (max-width: 768px) {
