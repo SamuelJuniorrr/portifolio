@@ -7,10 +7,48 @@
   <title>Portfólio Power BI - Samuel Ferreira</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Modal para imagem */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-content {
+      display: block;
+      margin: 5% auto;
+      max-width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 2100;
+    }
+
+    .close:hover {
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
 
- <header>
+  <header>
     <div class="container nav-container">
       <div class="logo">Samuel <span>Ferreira</span></div>
       <nav class="nav-links">
@@ -20,17 +58,6 @@
     </div>
   </header> 
 
-<!--  <section class="hero">
-    <div class="container">
-      <h1><span>Power BI</span></h1>
-      <p>Confira alguns dos dashboards desenvolvidos com foco em insights de negócio.</p>
-      <div class="buttons">
-        <a href="#projetos" class="btn">Ver Projetos</a>
-        <a href="#contato" class="btn outline">Entrar em Contato</a>
-      </div>
-    </div>
-  </section> -->
-
   <section id="projetos" class="projects-section">
     <div class="container">
       <h2 class="section-title">Power BI</h2>
@@ -38,14 +65,14 @@
       
       <div class="projects-grid">
         <div class="project-card">
-          <img class="project-logo2" src="https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Fretes.png" alt="Relatório Financeiro">
+          <img class="project-logo2" src="https://via.placeholder.com/800x600?text=Dashboard+de+Vendas" alt="Relatório Financeiro">
           <h3 class="project-title">Relatório Financeiro 2</h3>
           <p class="project-subtitle">Power BI</p>
           <p class="project-description">
             Relatório completo para monitoramento de receitas, despesas e lucro, com indicadores mensais e projeções anuais.
           </p>
           <p class="project-impact">Impacto: Redução de 18% em custos após acompanhamento mensal.</p>
-          <a class="project-link" href="https://app.powerbi.com/view?r=link-do-relatorio1" target="_blank">Ver relatório</a>
+          <a class="project-link" href="#" onclick="openImageModal('https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Fretes.png'); return false;">Ver relatório</a>
         </div>
 
         <div class="project-card">
@@ -56,7 +83,7 @@
             Painel dinâmico com metas, desempenho por canal e por equipe. Utiliza segmentações e comparativos por período.
           </p>
           <p class="project-impact">Impacto: Aumento de 12% nas conversões com base nas análises.</p>
-          <a class="project-link" href="https://app.powerbi.com/view?r=link-do-relatorio2" target="_blank">Ver relatório</a>
+          <a class="project-link" href="#" onclick="openImageModal('https://via.placeholder.com/800x600?text=Dashboard+de+Vendas'); return false;">Ver relatório</a>
         </div>
 
         <div class="project-card">
@@ -67,7 +94,7 @@
             Acompanhamento de headcount, turnover, admissões e desligamentos com indicadores por mês, área e função.
           </p>
           <p class="project-impact">Impacto: Identificação de gargalos em áreas com alto turnover.</p>
-          <a class="project-link" href="https://app.powerbi.com/view?r=link-do-relatorio3" target="_blank">Ver relatório</a>
+          <a class="project-link" href="#" onclick="openImageModal('https://via.placeholder.com/800x600?text=Relatório+de+Pessoas'); return false;">Ver relatório</a>
         </div>
       </div>
     </div>
@@ -78,6 +105,35 @@
       <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <!-- Modal de Imagem -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="popupImage">
+  </div>
+
+  <!-- Script do Modal -->
+  <script>
+    function openImageModal(imageUrl) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("popupImage");
+      modal.style.display = "block";
+      modalImg.src = imageUrl;
+    }
+
+    // Fechar modal com X
+    document.querySelector(".close").onclick = function () {
+      document.getElementById("imageModal").style.display = "none";
+    };
+
+    // Fechar ao clicar fora da imagem
+    window.onclick = function (event) {
+      const modal = document.getElementById("imageModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
 
 </body>
 </html>
