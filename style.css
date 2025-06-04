@@ -132,8 +132,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
-  padding-top: 60px;
+  min-height: 80vh;
+  padding-top: 80px;
   background: linear-gradient(135deg, #181820, #0f0f11);
   text-align: center;
 }
