@@ -104,8 +104,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
-  padding-top: 80px;
+  min-height: 40vh;
+  padding-top: 40px;
   background: linear-gradient(135deg, #181820, #0f0f11);
   text-align: center;
 }
