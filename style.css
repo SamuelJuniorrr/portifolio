@@ -168,13 +168,24 @@ header {
   gap: 2rem;
 }
 
-.project-card {
+.project-card2 {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 16px;
   border: 1px solid rgba(126, 115, 255, 0.2);
   backdrop-filter: blur(10px);
   padding: 5rem;
   /*  padding: 2rem; */
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(126, 115, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
   text-align: left;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
