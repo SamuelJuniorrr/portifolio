@@ -169,5 +169,16 @@
     };
   </script>
 
+  <script>
+  document.querySelector('.scroll-to-projects').addEventListener('click', () => {
+    const target = document.querySelector('#projetos');
+    const offset = target.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: offset - 50, // offset para considerar cabeçalho fixo
+      behavior: 'smooth'
+    });
+  });
+</script>
+
 </body>
 </html>
