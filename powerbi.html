@@ -1,154 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Power BI | Samuel Ferreira</title>
+  <meta name="description" content="Portfólio Power BI de Samuel Ferreira com dashboards e relatórios interativos.">
+  <title>Portfólio Power BI - Samuel Ferreira</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-<style>
-  .project-logo {
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto 0.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-  }
-
-  .project-card {
-    background: rgba(255 255 255 / 0.15);
-    backdrop-filter: blur(12px);
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 24px rgb(31 38 135 / 0.37);
-    transition: transform 0.2s ease;
-  }
-
-  .project-card:hover {
-    transform: translateY(-6px);
-  }
-
-  .project-title {
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 0.5rem 0 1rem;
-    color: #0a74da;
-  }
-
-  .project-description {
-    font-size: 1rem;
-    color: #444;
-    text-align: center;
-    line-height: 1.4;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap: 2rem;
-    padding-top: 2rem;
-  }
-
-  .container {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  header, footer {
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  header .logo {
-    font-weight: 700;
-    font-size: 1.8rem;
-  }
-
-  header .logo span {
-    color: #0a74da;
-  }
-
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #0a74da;
-    font-weight: 600;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Cabeçalho -->
   <header>
     <div class="container nav-container">
-      <div class="logo">Samuel<span> Ferreira</span></div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-        </ul>
+      <div class="logo">Samuel <span>Ferreira</span></div>
+      <nav class="nav-links">
+        <a href="#projetos" class="active">Projetos</a>
+        <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
-  <!-- Seção de Projetos Power BI -->
-  <section class="projects-section">
+  <section class="hero">
     <div class="container">
-      <h2 class="section-title">Power BI</h2>
-      <p class="section-subtitle">Dashboards e relatórios que desenvolvi recentemente:</p>
-
-      <div class="projects-grid">
-        <!-- Card Projeto 1 -->
-        <div class="project-card">
-          <img class="project-logo" src="https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Fretes.png" alt="Dashboard Vendas">
-          <h3 class="project-title">Dashboard de Vendast</h3>
-          <p class="project-description">
-            Dashboard interativo para análise de vendas por região e produto, com KPIs e gráficos detalhados para suporte à decisão.
-          </p>
-        </div>
-
-        <!-- Card Projeto 2 -->
-        <div class="project-card">
-          <img class="project-logo" src="https://app.powerbi.com/view?r=exemplo2" alt="Relatório Financeiro">
-          <h3 class="project-title">Relatório Financeiro</h3>
-          <p class="project-description">
-            Relatório completo para monitoramento de receitas, despesas e lucro, com indicadores mensais e projeções anuais.
-          </p>
-        </div>
-
-        <!-- Card Projeto 3 -->
-        <div class="project-card">
-          <img class="project-logo" src="https://app.powerbi.com/view?r=exemplo3" alt="Análise de Estoque">
-          <h3 class="project-title">Análise de Estoque</h3>
-          <p class="project-description">
-            Painel para controle de inventário, níveis de estoque e rotatividade, facilitando a tomada de decisões para reposição.
-          </p>
-        </div>
-
-        <!-- Pode adicionar mais cards conforme necessário -->
+      <h1>Portfólio <span>Power BI</span></h1>
+      <p>Confira alguns dos dashboards desenvolvidos com foco em insights de negócio.</p>
+      <div class="buttons">
+        <a href="#projetos" class="btn">Ver Projetos</a>
+        <a href="#contato" class="btn outline">Entrar em Contato</a>
       </div>
     </div>
   </section>
 
-  <!-- Rodapé -->
-  <footer>
+  <section id="projetos" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Projetos Power BI</h2>
+      <p class="section-subtitle">Dashboards e relatórios com foco em resultados e performance.</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <img class="project-logo" src="https://via.placeholder.com/100x100?text=Financeiro" alt="Relatório Financeiro">
+          <h3 class="project-title">Relatório Financeiro</h3>
+          <p class="project-subtitle">Power BI</p>
+          <p class="project-description">
+            Relatório completo para monitoramento de receitas, despesas e lucro, com indicadores mensais e projeções anuais.
+          </p>
+          <p class="project-impact">Impacto: Redução de 18% em custos após acompanhamento mensal.</p>
+          <a class="project-link" href="https://app.powerbi.com/view?r=link-do-relatorio1" target="_blank">Ver relatório</a>
+        </div>
+
+        <div class="project-card">
+          <img class="project-logo" src="https://via.placeholder.com/100x100?text=Vendas" alt="Dashboard de Vendas">
+          <h3 class="project-title">Dashboard de Vendas</h3>
+          <p class="project-subtitle">Power BI</p>
+          <p class="project-description">
+            Painel dinâmico com metas, desempenho por canal e por equipe. Utiliza segmentações e comparativos por período.
+          </p>
+          <p class="project-impact">Impacto: Aumento de 12% nas conversões com base nas análises.</p>
+          <a class="project-link" href="https://app.powerbi.com/view?r=link-do-relatorio2" target="_blank">Ver relatório</a>
+        </div>
+
+        <div class="project-card">
+          <img class="project-logo" src="https://via.placeholder.com/100x100?text=RH" alt="Relatório de Pessoas">
+          <h3 class="project-title">Relatório de Pessoas</h3>
+          <p class="project-subtitle">Power BI</p>
+          <p class="project-description">
+            Acompanhamento de headcount, turnover, admissões e desligamentos com indicadores por mês, área e função.
+          </p>
+          <p class="project-impact">Impacto: Identificação de gargalos em áreas com alto turnover.</p>
+          <a class="project-link" href="https://app.powerbi.com/view?r=link-do-relatorio3" target="_blank">Ver relatório</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
     <div class="container">
       <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
     </div>
