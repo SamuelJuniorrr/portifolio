@@ -238,3 +238,19 @@ footer {
   color: #9b93ff;
 }
 
+.project-actions,
+.project-results {
+  margin: 0.5rem 0 1rem 1rem;
+  padding-left: 0;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-actions li,
+.project-results li {
+  margin-bottom: 0.3rem;
+  list-style: none;
+}
+
+
