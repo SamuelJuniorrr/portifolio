@@ -256,26 +256,4 @@ footer {
 }
 
 
-.project-logo {
-  max-width: 140px;
-  height: auto;
-  display: block;
-  margin: 0 auto 1rem;
-  transition: transform 0.3s ease; /* animação suave */
-  cursor: pointer; /* muda o cursor para indicar interatividade */
-}
-
-.project-logo:hover {
-  transform: scale(1.5); /* aumenta 1.5x quando o mouse está em cima */
-  z-index: 10; /* garante que fique em cima de outros elementos */
-  position: relative; /* para funcionar o z-index */
-}
-
-.project-logo:hover {
-  transform: scale(1.5);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  z-index: 10;
-  position: relative;
-}
-
 
