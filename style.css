@@ -29,11 +29,9 @@ ul {
 }
 
 /* === IMAGENS DE PROJETOS === */
-.project-logo,
 .project-logo2 {
-width: 100%;
-max-width: 120px;
-height: auto;
+  padding: 2rem;
+  transition: transform 0.3s ease;
 }
 /* === HEADER === */
 header {
