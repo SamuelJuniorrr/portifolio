@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio Power BI de Samuel Ferreira com dashboards e relatórios interativos.">
+  <title>Power Automate - Samuel Ferreira</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Modal para imagem */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(3px);
+  }
+
+.modal-content {
+  display: block;
+  margin: 5% auto;
+  max-width: 90%;
+  width: 1200px;
+  border-radius: 16px;
+  border: 6px solid rgba(126, 115, 255, 0.2); /* Igual ao .project-card */
+  backdrop-filter: blur(12px);               /* Igual ao .project-card */
+  background: rgba(255, 255, 255, 0.1);      /* Igual ao .project-card */
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);  /* Igual ao .project-card */
+  transition: transform 0.3s ease;
+}
+
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2100;
+    transition: 0.2s;
+  }
+
+  .close:hover {
+    color: #ccc;
+  }
+
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+    }
+  }
+  </style>
+
+  
+</head>
+<body>
+
+  <!-- Header fixo -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Samuel<span> Ferreira</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="automate.html" class="active">Automate</a></li>
+       
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<section class="hero">
+  <div class="container">
+    <h1><span>Power Automate</span> que transforma dados em decisões</h1>
+    <p>Explore dashboards interativos desenvolvidos com foco em performance, visual storytelling e inteligência de negócio.</p>
+    <div class="buttons">
+      <button class="btn glass scroll-to-projects">
+        Ver Projetos
+        <span class="arrow">↓</span>
+      </button>
+    </div>
+  </div>
+</section>
+  
+  <section id="projetos" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Power BI</h2>
+      <p class="section-subtitle">Dashboards e relatórios com foco em resultados e performance.</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3 class="project-title">Relatório Financeiro 2</h3>
+          <p class="project-subtitle">Power BI</p>
+          <p class="project-description">
+            Relatório completo para monitoramento de receitas, despesas e lucro, com indicadores mensais e projeções anuais.
+          </p>
+          <p class="project-impact">Impacto: Redução de 18% em custos após acompanhamento mensal.</p>
+          <a class="project-link" href="#" onclick="openImageModal('https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Fretes.png'); return false;">Ver relatório</a>
+        </div>
+
+        <div class="project-card">
+          <img class="project-logo" src="https://via.placeholder.com/100x100?text=Vendas" alt="Dashboard de Vendas">
+          <h3 class="project-title">Dashboard de Vendas</h3>
+          <p class="project-subtitle">Power BI</p>
+          <p class="project-description">
+            Painel dinâmico com metas, desempenho por canal e por equipe. Utiliza segmentações e comparativos por período.
+          </p>
+          <p class="project-impact">Impacto: Aumento de 12% nas conversões com base nas análises.</p>
+          <a class="project-link" href="#" onclick="openImageModal('https://via.placeholder.com/800x600?text=Dashboard+de+Vendas'); return false;">Ver relatório</a>
+        </div>
+
+        <div class="project-card">
+          <img class="project-logo" src="https://via.placeholder.com/100x100?text=RH" alt="Relatório de Pessoas">
+          <h3 class="project-title">Relatório de Pessoas</h3>
+          <p class="project-subtitle">Power BI</p>
+          <p class="project-description">
+            Acompanhamento de headcount, turnover, admissões e desligamentos com indicadores por mês, área e função.
+          </p>
+          <p class="project-impact">Impacto: Identificação de gargalos em áreas com alto turnover.</p>
+          <a class="project-link" href="#" onclick="openImageModal('https://via.placeholder.com/800x600?text=Relatório+de+Pessoas'); return false;">Ver relatório</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div class="container">
+      <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal de Imagem -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="popupImage">
+  </div>
+
+  <!-- Script do Modal -->
+  <script>
+    function openImageModal(imageUrl) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("popupImage");
+      modal.style.display = "block";
+      modalImg.src = imageUrl;
+    }
+
+    // Fechar modal com X
+    document.querySelector(".close").onclick = function () {
+      document.getElementById("imageModal").style.display = "none";
+    };
+
+    // Fechar ao clicar fora da imagem
+    window.onclick = function (event) {
+      const modal = document.getElementById("imageModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+  <script>
+  document.querySelector('.scroll-to-projects').addEventListener('click', () => {
+    const target = document.querySelector('#projetos');
+    const offset = target.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: offset - 50, // offset para considerar cabeçalho fixo
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+</body>
+</html>
