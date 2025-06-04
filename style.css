@@ -336,18 +336,9 @@ footer {
   flex-wrap: wrap;
 }
 
-.project-image {
-  flex: 1 1 250px;
-  background: #2c2c2c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
 .project-image img {
-  max-width: 120px;
-  height: auto;
+  max-height: 60px;
+  width: auto;
   filter: brightness(0) invert(1);
 }
 
