@@ -99,6 +99,34 @@ header {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.scroll-btn .arrow {
+  font-size: 1.2rem;
+  animation: bounce 1.2s infinite;
+  transform-origin: center;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+
 /* === HERO === */
 .hero {
   display: flex;
