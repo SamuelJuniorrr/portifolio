@@ -219,8 +219,8 @@ header {
 }
 
 .project-logo {
-  width: 150px;  /* Aumenta a largura da imagem */
-  height: 150px; /* Aumenta a altura da imagem */
+  width: 80px;  /* Aumenta a largura da imagem */
+  height: 80px; /* Aumenta a altura da imagem */
   object-fit: contain; /* Mantém a proporção da imagem */
 }
 
