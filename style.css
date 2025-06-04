@@ -218,6 +218,11 @@ header {
   color: #a399ff;
 }
 
+.project-logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
 /* === FOOTER === */
 footer {
   text-align: center;
@@ -229,29 +234,3 @@ footer {
 
 /* === RESPONSIVO === */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-    background-color: #0f0f11;
-    padding-top: 1rem;
-  }
-
-  .buttons {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .project-card {
-    padding: 1.5rem;
-  }
-
-  .project-image img {
-    max-width: 80px;
-    margin: auto;
-  }
-}
-
