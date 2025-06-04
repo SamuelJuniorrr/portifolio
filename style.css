@@ -28,6 +28,20 @@ ul {
   padding: 0 1.5rem;
 }
 
+/* === IMAGENS DE PROJETOS === */
+.project-logo,
+.project-logo2 {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;         /* Imagem circular */
+  border: 2px solid #7E73FF;  /* Borda com a cor do tema */
+  box-shadow: 0 4px 12px rgba(126, 115, 255, 0.2);
+  background-color: #1a1a1d;
+  padding: 8px;
+  display: block;
+  margin-bottom: 1rem;
+
 /* === HEADER === */
 header {
   background-color: #0f0f11;
@@ -253,15 +267,12 @@ footer {
     max-width: 80px;
     margin: auto;
   }
-  .project-logo {
-  width: 10px;  /* Aumenta a largura da imagem */
-  height: 10px; /* Aumenta a altura da imagem */
-  object-fit: contain; /* Mantém a proporção da imagem */
-}
-   .project-logo2 {
-width: 100%;
-max-width: 120px;
-height: auto;
+  .project-logo,
+  .project-logo2 {
+    width: 80px;
+    height: 80px;
+    padding: 6px;
+  }
 }
 }
 
