@@ -41,7 +41,7 @@ ul {
   padding: 8px;
   display: block;
   margin-bottom: 1rem;
-
+}
 /* === HEADER === */
 header {
   background-color: #0f0f11;
@@ -269,9 +269,9 @@ footer {
   }
   .project-logo,
   .project-logo2 {
-    width: 80px;
-    height: 80px;
-    padding: 6px;
+width: 100%;
+max-width: 120px;
+height: auto;
   }
 }
 }
