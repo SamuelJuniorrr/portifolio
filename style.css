@@ -253,6 +253,11 @@ footer {
     max-width: 80px;
     margin: auto;
   }
+  .project-logo {
+  width: 150px;  /* Aumenta a largura da imagem */
+  height: 150px; /* Aumenta a altura da imagem */
+  object-fit: contain; /* Mantém a proporção da imagem */
+}
 }
 
 
