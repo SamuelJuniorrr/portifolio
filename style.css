@@ -219,9 +219,11 @@ header {
 }
 
 .project-logo {
-  width: 300;
-  margin-bottom: 0rem;
+  width: 150px;  /* Aumenta a largura da imagem */
+  height: 150px; /* Aumenta a altura da imagem */
+  object-fit: contain; /* Mantém a proporção da imagem */
 }
+
 
 /* === FOOTER === */
 footer {
