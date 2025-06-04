@@ -28,11 +28,7 @@ ul {
   padding: 0 1.5rem;
 }
 
-/* === IMAGENS DE PROJETOS === */
-.project-logo2 {
-  padding: 2rem;
-  transition: transform 0.3s ease;
-}
+
 /* === HEADER === */
 header {
   background-color: #0f0f11;
