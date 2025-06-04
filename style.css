@@ -28,7 +28,18 @@ ul {
   padding: 0 1.5rem;
 }
 
-
+.project-logo2 {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;         /* Imagem circular */
+  border: 2px solid #7E73FF;  /* Borda com a cor do tema */
+  box-shadow: 0 4px 12px rgba(126, 115, 255, 0.2);
+  background-color: #1a1a1d;
+  padding: 8px;
+  display: block;
+  margin-bottom: 1rem;
+}
 /* === HEADER === */
 header {
   background-color: #0f0f11;
