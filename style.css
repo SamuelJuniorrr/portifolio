@@ -13,11 +13,11 @@ body {
 }
 
 .subheadline {
-  font-size: 1rem; /* Tamanho menor que o padrão do body */
+  font-size: 0.2rem; /* Tamanho menor que o padrão do body */
   color: #ddd;     /* Cor opcional para dar leveza */
-  margin-top: 0.5rem;
+ /* margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-  max-width: 700px;
+  max-width: 700px;*/
 }
 
 a {
