@@ -40,6 +40,7 @@ ul {
   display: block;
   margin-bottom: 1rem;
 }
+
 /* === HEADER === */
 header {
   background-color: #0f0f11;
@@ -116,72 +117,9 @@ header {
 }
 
 .btn.glass:hover {
- background: rgba(126, 115, 255, 0.25);
+  background: rgba(126, 115, 255, 0.25);
   transform: translateY(-2px);
 }
-
-/* Botão LinkedIn estilo glass */
-.btn.linkedin-glass {
-  background: rgba(126, 115, 255, 0.15);
-  border: 1.5px solid rgba(126, 115, 255, 0.5);
-  color: #7E73FF;
-  font-weight: 600;
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 15px rgba(126, 115, 255, 0.4);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn.linkedin-glass:hover {
-  background: rgba(126, 115, 255, 0.35);
-  color: white;
-  box-shadow: 0 0 20px rgba(126, 115, 255, 0.7);
-  transform: translateY(-2px);
-}
-
-
-/* Botão glass para o e-mail */
-.btn.email-glass {
-  background: rgba(126, 115, 255, 0.15);
-  border: 1.5px solid rgba(126, 115, 255, 0.5);
-  color: #7E73FF;
-  font-weight: 600;
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 15px rgba(126, 115, 255, 0.4);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn.email-glass:hover {
-  background: rgba(126, 115, 255, 0.35);
-  color: white;
-  box-shadow: 0 0 20px rgba(126, 115, 255, 0.7);
-  transform: translateY(-2px);
-}
-
-
-.arrow {
-  font-size: 1.2rem;
-  animation: arrowBounce 1.5s infinite;
-  display: inline-block;
-  transform-origin: center;
-}
-
-@keyframes arrowBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(5px); }
-}
-
-
-
 
 /* === HERO === */
 .hero {
@@ -231,15 +169,12 @@ header {
 
 .btn.outline {
   background: transparent;
- /* border: 2px solid #7E73FF;*/
-  border: 2px solid #0A66C2
-  box-shadow: 0 0 15px rgba(126, 115, 255, 0.4);
+  border: 2px solid #0A66C2;
   color: #7E73FF;
 }
 
 .btn.outline:hover {
   background-color: #7E73FF;
-  box-shadow: 0 0 20px rgba(126, 115, 255, 0.7);
   color: white;
 }
 
@@ -326,12 +261,22 @@ footer {
   color: #888;
 }
 
-
 /* === RESPONSIVO === */
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 50px; /* Diminui o espaço do topo */
+    text-align: center; /* Garante centralização do texto */
+  }
+
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem; /* Ajuste para tamanhos menores */
+    margin-bottom: 0.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem; /* Reduz o tamanho do texto */
+    margin-bottom: 1.5rem;
   }
 
   .nav-links {
@@ -339,6 +284,11 @@ footer {
     gap: 1rem;
     background-color: #0f0f11;
     padding-top: 1rem;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem; /* Tamanho de fonte ajustado para navegação em dispositivos móveis */
   }
 
   .buttons {
@@ -347,12 +297,20 @@ footer {
   }
 
   .project-card {
-    padding: 1.5rem;
+    padding: 1rem; /* Menos padding para melhor aproveitamento do espaço */
   }
 
   .project-image img {
-    max-width: 80px;
+    max-width: 70px; /* Reduz o tamanho da imagem */
     margin: auto;
   }
 
+  .container {
+    padding: 0 1rem; /* Ajusta a largura para telas menores */
+  }
 
+  .btn {
+    width: 100%; /* Botões ocupando toda a largura */
+    margin-top: 1rem; /* Espaçamento para botões em dispositivos móveis */
+  }
+}
