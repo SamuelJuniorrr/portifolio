@@ -337,7 +337,7 @@ footer {
 
 /* === RESPONSIVO === */
 
-@media (max-width: 760px) {
+@media (max-width: 600px) {
   .hero h1 {
     font-size: 1rem;
   }
@@ -355,7 +355,7 @@ footer {
   }
 
   .project-card {
-    padding: 1.5rem;
+    padding: 1.0rem;
   }
 
   .project-image img {
