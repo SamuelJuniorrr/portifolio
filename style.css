@@ -336,7 +336,7 @@ footer {
 
 
 /* === RESPONSIVO === */
-
+/* 
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 1rem;
@@ -361,5 +361,5 @@ footer {
   .project-image img {
     max-width: 80px;
     margin: auto;
-  }
+  }*/
 
