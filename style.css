@@ -12,6 +12,14 @@ body {
   line-height: 1.6;
 }
 
+.subheadline {
+  font-size: 1rem; /* Tamanho menor que o padrão do body */
+  color: #ddd;     /* Cor opcional para dar leveza */
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
