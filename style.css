@@ -239,6 +239,7 @@ border: 2px solid #7E73FF;
 
 .btn.outline:hover {
   background-color: #7E73FF;
+  box-shadow: 0 0 20px rgba(126, 115, 255, 0.7);
   color: white;
 }
 
