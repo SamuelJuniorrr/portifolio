@@ -132,24 +132,27 @@ header {
   50% { transform: translateY(5px); }
 }
 
-.btn-email {
-  display: inline-block;
+.btn.email {
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #0a74da, #005bb5);
+  background: rgba(126, 115, 255, 0.15);
+  border: 1px solid rgba(126, 115, 255, 0.3);
   color: #fff;
-  border: none;
-  border-radius: 8px;
   font-weight: 600;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  font-size: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px rgba(126, 115, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.btn-email:hover {
-  background: linear-gradient(135deg, #005bb5, #0a74da);
+.btn.email:hover {
+  background: rgba(126, 115, 255, 0.25);
   transform: translateY(-2px);
 }
+
 
 /* === HERO === */
 .hero {
