@@ -120,18 +120,6 @@ header {
   transform: translateY(-2px);
 }
 
-.arrow {
-  font-size: 1.2rem;
-  animation: arrowBounce 1.5s infinite;
-  display: inline-block;
-  transform-origin: center;
-}
-
-@keyframes arrowBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(5px); }
-}
-
 .btn.email {
   padding: 0.75rem 1.5rem;
   background: rgba(126, 115, 255, 0.15);
@@ -152,6 +140,20 @@ header {
   background: rgba(126, 115, 255, 0.25);
   transform: translateY(-2px);
 }
+
+.arrow {
+  font-size: 1.2rem;
+  animation: arrowBounce 1.5s infinite;
+  display: inline-block;
+  transform-origin: center;
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+
 
 
 /* === HERO === */
