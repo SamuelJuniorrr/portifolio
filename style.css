@@ -336,7 +336,7 @@ footer {
 
   .nav-links {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     background-color: #0f0f11;
     padding-top: 1rem;
   }
