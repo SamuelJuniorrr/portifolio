@@ -122,27 +122,25 @@ header {
 
 /* Botão LinkedIn estilo glass */
 .btn.linkedin-glass {
-  padding: 0.75rem 1.5rem;
   background: rgba(126, 115, 255, 0.15);
   border: 1.5px solid rgba(126, 115, 255, 0.5);
   color: #7E73FF;
   font-weight: 600;
   border-radius: 12px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 4px 20px rgba(10, 102, 194, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(126, 115, 255, 0.4);
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-decoration: none;
 }
 
 .btn.linkedin-glass:hover {
-  background: rgba(10, 102, 194, 0.25);
+  background: rgba(126, 115, 255, 0.35);
   color: white;
+  box-shadow: 0 0 20px rgba(126, 115, 255, 0.7);
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(10, 102, 194, 0.35);
 }
 
 
