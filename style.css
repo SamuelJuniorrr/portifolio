@@ -120,7 +120,7 @@ header {
   transform: translateY(-2px);
 }
 
-.btn.email {
+.btn.email-glass {
   padding: 0.75rem 1.5rem;
   background: rgba(126, 115, 255, 0.15);
   border: 1px solid rgba(126, 115, 255, 0.3);
@@ -136,10 +136,11 @@ header {
   transition: all 0.3s ease;
 }
 
-.btn.email:hover {
+.btn.email-glass:hover {
   background: rgba(126, 115, 255, 0.25);
   transform: translateY(-2px);
 }
+
 
 .arrow {
   font-size: 1.2rem;
