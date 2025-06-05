@@ -13,7 +13,7 @@ body {
 }
 
 .subheadline {
-  font-size: 0.2rem; /* Tamanho menor que o padrão do body */
+font-size: 0.1rem;
   color: #ddd;     /* Cor opcional para dar leveza */
  /* margin-top: 0.5rem;
   margin-bottom: 1.5rem;
