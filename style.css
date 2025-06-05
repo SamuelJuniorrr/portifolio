@@ -318,11 +318,17 @@ header {
   margin-top: 1rem;
   color: #7E73FF;
   font-weight: 600;
-  font-size: 0.95rem;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(126, 115, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .project-link:hover {
-  color: #a399ff;
+  background: rgba(126, 115, 255, 0.25);
+  border-color: #7E73FF;
+  color: white;
 }
 
 /* === FOOTER === */
