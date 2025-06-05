@@ -339,7 +339,7 @@ footer {
 
 @media (max-width: 760px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .nav-links {
