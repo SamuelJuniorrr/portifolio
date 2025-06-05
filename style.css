@@ -337,7 +337,7 @@ footer {
 
 /* === RESPONSIVO === */
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .hero h1 {
     font-size: 2rem;
   }
