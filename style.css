@@ -350,9 +350,10 @@ footer {
 
 /* === RESPONSIVO === */
 
-@media (max-width: 200px) {
+/* Estilos para dispositivos com largura até 480px */
+@media (max-width: 480px) {
   .hero h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .nav-links {
@@ -368,11 +369,41 @@ footer {
   }
 
   .project-card {
-    padding: 1.0rem;
+    padding: 1rem;
   }
 
   .project-image img {
-    max-width: 100px;
+    max-width: 100%;
+    height: auto;
+    display: block;
     margin: auto;
   }
+}
+
+/* Estilos para dispositivos entre 481px e 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Outros ajustes específicos para essa faixa de largura */
+}
+
+/* Estilos para dispositivos entre 769px e 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  /* Outros ajustes específicos para essa faixa de largura */
+}
+
+/* Estilos para dispositivos com largura acima de 1024px */
+@media (min-width: 1025px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Outros ajustes específicos para telas maiores */
+}
 
