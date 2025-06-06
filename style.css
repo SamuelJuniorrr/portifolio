@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -12,21 +17,6 @@ body {
   line-height: 1.6;
 }
 
-.subheadline {
-font-size: 0.1rem;
-  color: #ddd;     /* Cor opcional para dar leveza */
- /* margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  max-width: 700px;*/
-}
-
-* {
-  -webkit-user-select: none; /* Chrome, Safari, Opera */
-  -khtml-user-select: none;  /* Konqueror (Linux) */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* Internet Explorer/Edge */
-  user-select: none;         /* Padrão */
-}
 a {
   text-decoration: none;
   color: inherit;
@@ -43,18 +33,11 @@ ul {
   padding: 0 1.5rem;
 }
 
-.project-logo2 {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  border-radius: 0%;         /* Imagem circular */
-  border: 2px solid #7E73FF;  /* Borda com a cor do tema */
-  box-shadow: 0 4px 12px rgba(126, 115, 255, 0.2);
-  background-color: #1a1a1d;
-  padding: 8px;
-  display: block;
-  margin-bottom: 1rem;
+.subheadline {
+  font-size: 1rem;
+  color: #ddd;
 }
+
 /* === HEADER === */
 header {
   background-color: #0f0f11;
@@ -114,6 +97,7 @@ header {
   width: 100%;
 }
 
+/* === BOTÕES GLASS === */
 .btn.glass {
   padding: 0.75rem 1.5rem;
   background: rgba(126, 115, 255, 0.15);
@@ -131,35 +115,11 @@ header {
 }
 
 .btn.glass:hover {
- background: rgba(126, 115, 255, 0.25);
+  background: rgba(126, 115, 255, 0.25);
   transform: translateY(-2px);
 }
 
-/* Botão LinkedIn estilo glass */
-.btn.linkedin-glass {
-  background: rgba(126, 115, 255, 0.15);
-  border: 1.5px solid rgba(126, 115, 255, 0.5);
-  color: #7E73FF;
-  font-weight: 600;
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 15px rgba(126, 115, 255, 0.4);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn.linkedin-glass:hover {
-  background: rgba(126, 115, 255, 0.35);
-  color: white;
-  box-shadow: 0 0 20px rgba(126, 115, 255, 0.7);
-  transform: translateY(-2px);
-}
-
-
-/* Botão glass para o e-mail */
+.btn.linkedin-glass,
 .btn.email-glass {
   background: rgba(126, 115, 255, 0.15);
   border: 1.5px solid rgba(126, 115, 255, 0.5);
@@ -175,13 +135,13 @@ header {
   transition: all 0.3s ease;
 }
 
+.btn.linkedin-glass:hover,
 .btn.email-glass:hover {
   background: rgba(126, 115, 255, 0.35);
   color: white;
   box-shadow: 0 0 20px rgba(126, 115, 255, 0.7);
   transform: translateY(-2px);
 }
-
 
 .arrow {
   font-size: 1.2rem;
@@ -194,9 +154,6 @@ header {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(5px); }
 }
-
-
-
 
 /* === HERO === */
 .hero {
@@ -246,8 +203,7 @@ header {
 
 .btn.outline {
   background: transparent;
- /* border: 2px solid #7E73FF;*/
-  border: 2px solid #0A66C2
+  border: 2px solid #0A66C2;
   box-shadow: 0 0 15px rgba(126, 115, 255, 0.4);
   color: #7E73FF;
 }
@@ -347,10 +303,7 @@ footer {
   color: #888;
 }
 
-
 /* === RESPONSIVO === */
-
-/* Estilos para dispositivos com largura até 480px */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.2rem;
@@ -380,30 +333,20 @@ footer {
   }
 }
 
-/* Estilos para dispositivos entre 481px e 768px */
 @media (min-width: 481px) and (max-width: 768px) {
   .hero h1 {
     font-size: 1.5rem;
   }
-
-  /* Outros ajustes específicos para essa faixa de largura */
 }
 
-/* Estilos para dispositivos entre 769px e 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero h1 {
     font-size: 2rem;
   }
-
-  /* Outros ajustes específicos para essa faixa de largura */
 }
 
-/* Estilos para dispositivos com largura acima de 1024px */
 @media (min-width: 1025px) {
   .hero h1 {
     font-size: 2.5rem;
   }
-
-  /* Outros ajustes específicos para telas maiores */
 }
-
