@@ -9,63 +9,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Modal para imagem */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(3px);
-  }
-
-.modal-content {
-  display: block;
-  margin: 5% auto;
-  max-width: 90%;
-  width: 1200px;
-  border-radius: 16px;
-  border: 6px solid rgba(126, 115, 255, 0.2); /* Igual ao .project-card */
-  backdrop-filter: blur(12px);               /* Igual ao .project-card */
-  background: rgba(255, 255, 255, 0.1);      /* Igual ao .project-card */
-  padding: 2rem;
-  text-align: left;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);  /* Igual ao .project-card */
-  transition: transform 0.3s ease;
-}
-
-  .close {
-    position: absolute;
-    top: 30px;
-    right: 50px;
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 2100;
-    transition: 0.2s;
-  }
-
-  .close:hover {
-    color: #ccc;
-  }
-
-  @media (max-width: 768px) {
-    .modal-content {
-      width: 90%;
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(3px);
     }
-  }
-  </style>
 
-  
+    .modal-content {
+      display: block;
+      margin: auto;
+      max-width: 90%;
+      width: 1200px;
+      border-radius: 16px;
+      border: 6px solid rgba(126, 115, 255, 0.2);
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      text-align: left;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 2100;
+      transition: 0.2s;
+    }
+
+    .close:hover {
+      color: #ccc;
+    }
+
+    .carousel {
+      position: relative;
+      text-align: center;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(126, 115, 255, 0.3);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      z-index: 2100;
+      border-radius: 50%;
+    }
+
+    .carousel-btn.left {
+      left: 10px;
+    }
+
+    .carousel-btn.right {
+      right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header fixo -->
   <header>
     <div class="container nav-container">
       <div class="logo">Samuel<span> Ferreira</span></div>
@@ -74,32 +96,28 @@
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="powerbi.html" class="active">Power BI</a></li>
-       
         </ul>
       </nav>
     </div>
   </header>
 
-<section class="hero">
-  <div class="container">
-    <h1><span>Power BI</span> que transforma dados em decisões</h1>
-    <p>Cada dashboard foi desenvolvido com foco em performance, clareza e impacto no processo decisório.</p>
-    <p>Combinando visual storytelling, modelagem eficiente e entendimento do negócio, estas soluções refletem meu compromisso com a inteligência baseada em dados..</p>
-    <div class="buttons">
-      <button class="btn glass scroll-to-projects">
-        Ver Projetos
-        <span class="arrow">↓</span>
-      </button>
+  <section class="hero">
+    <div class="container">
+      <h1><span>Power BI</span> que transforma dados em decisões</h1>
+      <p>Cada dashboard foi desenvolvido com foco em performance, clareza e impacto no processo decisório.</p>
+      <p>Combinando visual storytelling, modelagem eficiente e entendimento do negócio, estas soluções refletem meu compromisso com a inteligência baseada em dados..</p>
+      <div class="buttons">
+        <button class="btn glass scroll-to-projects">Ver Projetos <span class="arrow">↓</span></button>
+      </div>
     </div>
-  </div>
-</section>
-  
+  </section>
+
   <section id="projetos" class="projects-section">
     <div class="container">
       <h2 class="section-title">Power BI</h2>
       <p class="section-subtitle">Dashboards e relatórios com foco em resultados e performance.</p>
 
-      
+      <div class="projects-grid">
       <div class="projects-grid">
          <div class="project-card">
           <h3 class="project-title">Analise de Vendas</h3>
@@ -163,7 +181,7 @@
           <a class="project-link" href="#" onclick="openImageModal('https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/representantes.png'); return false;">Ver relatório</a>
           </div>
         
-      </div>
+      </div>      </div>
     </div>
   </section>
 
@@ -173,27 +191,41 @@
     </div>
   </footer>
 
-  <!-- Modal de Imagem -->
+  <!-- Modal com múltiplas imagens -->
   <div id="imageModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="popupImage">
+    <div class="carousel">
+      <button class="carousel-btn left" onclick="prevImage()">‹</button>
+      <img class="modal-content" id="popupImage">
+      <button class="carousel-btn right" onclick="nextImage()">›</button>
+    </div>
   </div>
 
-  <!-- Script do Modal -->
   <script>
-    function openImageModal(imageUrl) {
-      const modal = document.getElementById("imageModal");
-      const modalImg = document.getElementById("popupImage");
-      modal.style.display = "block";
-      modalImg.src = imageUrl;
+    let imageList = [];
+    let currentImageIndex = 0;
+
+    function openImageModal(...urls) {
+      imageList = urls;
+      currentImageIndex = 0;
+      document.getElementById("popupImage").src = imageList[0];
+      document.getElementById("imageModal").style.display = "block";
     }
 
-    // Fechar modal com X
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % imageList.length;
+      document.getElementById("popupImage").src = imageList[currentImageIndex];
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + imageList.length) % imageList.length;
+      document.getElementById("popupImage").src = imageList[currentImageIndex];
+    }
+
     document.querySelector(".close").onclick = function () {
       document.getElementById("imageModal").style.display = "none";
     };
 
-    // Fechar ao clicar fora da imagem
     window.onclick = function (event) {
       const modal = document.getElementById("imageModal");
       if (event.target === modal) {
@@ -203,14 +235,11 @@
   </script>
 
   <script>
-  document.querySelector('.scroll-to-projects').addEventListener('click', () => {
-    const target = document.querySelector('#projetos');
-    const offset = target.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({
-      top: offset - 50, // offset para considerar cabeçalho fixo
-      behavior: 'smooth'
+    document.querySelector('.scroll-to-projects').addEventListener('click', () => {
+      const target = document.querySelector('#projetos');
+      const offset = target.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: offset - 50, behavior: 'smooth' });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
