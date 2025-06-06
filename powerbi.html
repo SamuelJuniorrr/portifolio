@@ -190,59 +190,8 @@
       <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
     </div>
   </footer>
- <!-- Modal com múltiplas imagens -->
-  <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="carousel">
-      <button class="carousel-btn" onclick="prevImage()">‹</button>
-      <img class="modal-content" id="popupImage">
-      <button class="carousel-btn" onclick="nextImage()">›</button>
-    </div>
-  </div>
 
-  <script>
-    let imageList = [];
-    let currentImageIndex = 0;
-
-    function openImageModal(...urls) {
-      imageList = urls;
-      currentImageIndex = 0;
-      document.getElementById("popupImage").src = imageList[0];
-      document.getElementById("imageModal").style.display = "block";
-    }
-
-    function nextImage() {
-      currentImageIndex = (currentImageIndex + 1) % imageList.length;
-      document.getElementById("popupImage").src = imageList[currentImageIndex];
-    }
-
-    function prevImage() {
-      currentImageIndex = (currentImageIndex - 1 + imageList.length) % imageList.length;
-      document.getElementById("popupImage").src = imageList[currentImageIndex];
-    }
-
-    document.querySelector(".close").onclick = function () {
-      document.getElementById("imageModal").style.display = "none";
-    };
-
-    window.onclick = function (event) {
-      const modal = document.getElementById("imageModal");
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
-
-  <script>
-    document.querySelector('.scroll-to-projects').addEventListener('click', () => {
-      const target = document.querySelector('#projetos');
-      const offset = target.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({ top: offset - 50, behavior: 'smooth' });
-    });
-  </script>
-</body>
-</html>
-  <!-- Modal com múltiplas imagens 
+  <!-- Modal com múltiplas imagens -->
   <div id="imageModal" class="modal">
     <span class="close">&times;</span>
     <div class="carousel">
@@ -293,4 +242,4 @@
     });
   </script>
 </body>
-</html> -->
+</html> 
