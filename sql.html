@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio SQL de Samuel Ferreira.">
+  <title>Portfólio SQL - Samuel Ferreira</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(3px);
+    }
+
+    .modal-content {
+      display: block;
+      margin: auto;
+      max-width: 90%;
+      width: 1200px;
+      border-radius: 16px;
+      border: 6px solid rgba(126, 115, 255, 0.2);
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      text-align: left;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 2100;
+      transition: 0.2s;
+    }
+
+    .close:hover {
+      color: #ccc;
+    }
+
+    .carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .carousel-btn {
+      background: rgba(126, 115, 255, 0.15);
+      border: 1px solid rgba(126, 115, 255, 0.3);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 20px rgba(126, 115, 255, 0.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .carousel-btn:hover {
+      background: rgba(126, 115, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 90%;
+      }
+* {
+  -webkit-user-select: none;       /* Safari, Chrome, Opera */
+  -khtml-user-select: none;        /* Konqueror */
+  -moz-user-select: none;          /* Firefox */
+  -ms-user-select: none;           /* Internet Explorer/Edge */
+  user-select: none;               /* Padrão */
+  -webkit-touch-callout: none;     /* iOS Safari */
+}  
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Samuel<span> Ferreira</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="sql.html" class="active">SQL</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1><span>SQL</span> que transforma dados em decisões ageis</h1>
+      <p>Com SQL, construo soluções que automatizam rotinas, integram sistemas e reduzem tarefas manuais que atrasam o dia a dia.</p>
+      <p>onsultas inteligentes que otimizam operações.</p> <p>Cada linha de código é pensada para gerar agilidade entre as áreas  — garantindo consistência, velocidade e precisão.</p>
+ <p> <b></b>Digitalizando dados, acelerando resultados.</p></b>
+      <div class="buttons">
+        <button class="btn glass scroll-to-projects">Ver Projetos <span class="arrow">↓</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">SQL</h2>
+      <p class="section-subtitle">Fluxos inteligentes com SQL: onde cada consulta entrega produtividade real.</p>
+      <div class="projects-grid">
+         <div class="project-card">
+          <h3 class="project-title">Automação de Cobrança</h3>
+          <p class="project-subtitle">SQL</p>
+          <p class="project-description">
+        Fluxo automatizado no SQL que realiza a consulta SQL de títulos financeiros vencidos, segmenta os dados por empresa e representante, e dispara e-mails de cobrança personalizados. O conteúdo é estruturado com mensagem padrão e tabela de clientes/títulos, incluindo alerta sobre ações extrajudiciais.          </p>
+          <p class="project-impact">Redução significativa no tempo de envio de cobranças, aumento da agilidade e padronização na comunicação e mitigação de inadimplência por meio de ações preventivas automatizadas.</p>
+           <a class="project-link" href="#" onclick="openImageModal(
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AutomateFIN.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AutomateFIN2.png',
+              ); return false;">Ver Imagens</a>
+          </div>
+
+
+          <div class="project-card">
+          <h3 class="project-title">Automação de Cadastro</h3>
+          <p class="project-subtitle">SQL</p>
+          <p class="project-description">
+          Automação criada no SQL que monitora um formulário do SharePoint. Quando um novo item é preenchido com anexo, o fluxo recupera os dados e envia automaticamente um e-mail HTML para a equipe de cadastro, com o solicitante em cópia e o anexo incorporado.
+          </p>
+          <p class="project-impact">Redução do tempo de resposta no processo de cadastro, eliminação de retrabalho, aumento da eficiência e padronização da comunicação.
+          </p>
+           <a class="project-link" href="#" onclick="openImageModal(
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AutomateCAD.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AutomateCAD2.png',
+              ); return false;">Ver Imagens</a>          </div>
+
+
+                  <div class="project-card">
+          <h3 class="project-title">Automação de Desmontagem</h3>
+          <p class="project-subtitle">SQL</p>
+          <p class="project-description">
+        Este fluxo em SQL foi criado para automatizar a tratativa de solicitações de desmontagem de produtos, recebidas por meio de um formulário. Quando um novo formulário é submetido, o fluxo verifica automaticamente se o item solicitado está presente em uma lista de produtos restritos. Caso o produto esteja na lista, a solicitação é negada de forma imediata e um e-mail de recusa é enviado ao solicitante, informando que não será possível dar andamento. Por outro lado, se o produto não estiver entre os restritos, o sistema envia automaticamente um e-mail positivo, confirmando que a solicitação será processada normalmente.          </p>
+          <p class="project-impact">Automação de decisões com base em critérios de negócio, maior agilidade na resposta ao solicitante e padronização das tratativas internas.
+          </p>
+           <a class="project-link" href="#" onclick="openImageModal(
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AutomatePD.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AutomatePD2.png',
+              ); return false;">Ver Imagens</a>          </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div class="container">
+      <p>&copy; 2025 Samuel Ferreira. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal com múltiplas imagens -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="carousel">
+      <button class="carousel-btn" onclick="prevImage()">‹</button>
+      <img class="modal-content" id="popupImage">
+      <button class="carousel-btn" onclick="nextImage()">›</button>
+    </div>
+  </div>
+
+  <script>
+    let imageList = [];
+    let currentImageIndex = 0;
+
+    function openImageModal(...urls) {
+      imageList = urls;
+      currentImageIndex = 0;
+      document.getElementById("popupImage").src = imageList[0];
+      document.getElementById("imageModal").style.display = "block";
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % imageList.length;
+      document.getElementById("popupImage").src = imageList[currentImageIndex];
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + imageList.length) % imageList.length;
+      document.getElementById("popupImage").src = imageList[currentImageIndex];
+    }
+
+    document.querySelector(".close").onclick = function () {
+      document.getElementById("imageModal").style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      const modal = document.getElementById("imageModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+  <script>
+    document.querySelector('.scroll-to-projects').addEventListener('click', () => {
+      const target = document.querySelector('#projetos');
+      const offset = target.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: offset - 50, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
