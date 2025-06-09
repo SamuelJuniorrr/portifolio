@@ -3,71 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio Power BI de Samuel Ferreira com dashboards e relatórios interativos.">
+  <meta name="description" content="Portfólio Power Automate de Samuel Ferreira com dashboards e relatórios interativos.">
   <title>Portfólio Power Automate - Samuel Ferreira</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Modal para imagem */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(3px);
-  }
-
-.modal-content {
-  display: block;
-  margin: 5% auto;
-  max-width: 90vw;
-  max-height: 90vh;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  border: 6px solid rgba(126, 115, 255, 0.2); /* Igual ao .project-card */
-  backdrop-filter: blur(12px);               /* Igual ao .project-card */
-  background: rgba(255, 255, 255, 0.1);      /* Igual ao .project-card */
-  padding: 2rem;
-  text-align: left;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);  /* Igual ao .project-card */
-  transition: transform 0.3s ease;
-}
-
-  .close {
-    position: absolute;
-    top: 30px;
-    right: 50px;
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 2100;
-    transition: 0.2s;
-  }
-
-  .close:hover {
-    color: #ccc;
-  }
-
-  @media (max-width: 768px) {
-    .modal-content {
-      width: 90%;
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(3px);
     }
-  }
-  </style>
 
-  
+    .modal-content {
+      display: block;
+      margin: auto;
+      max-width: 90%;
+      width: 1200px;
+      border-radius: 16px;
+      border: 6px solid rgba(126, 115, 255, 0.2);
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      text-align: left;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 2100;
+      transition: 0.2s;
+    }
+
+    .close:hover {
+      color: #ccc;
+    }
+
+    .carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .carousel-btn {
+      background: rgba(126, 115, 255, 0.15);
+      border: 1px solid rgba(126, 115, 255, 0.3);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 20px rgba(126, 115, 255, 0.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .carousel-btn:hover {
+      background: rgba(126, 115, 255, 0.25);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 90%;
+      }
+* {
+  -webkit-user-select: none;       /* Safari, Chrome, Opera */
+  -khtml-user-select: none;        /* Konqueror */
+  -moz-user-select: none;          /* Firefox */
+  -ms-user-select: none;           /* Internet Explorer/Edge */
+  user-select: none;               /* Padrão */
+  -webkit-touch-callout: none;     /* iOS Safari */
+}  
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header fixo -->
   <header>
     <div class="container nav-container">
       <div class="logo">Samuel<span> Ferreira</span></div>
@@ -75,69 +106,112 @@
         <ul class="nav-links">
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="automate.html" class="active">Automate</a></li>
-       
+          <li><a href="powerbi.html" class="active">Automate</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<section class="hero">
-  <div class="container">
-    <h1><span>Power Automate</span> que transforma processos em produtividade</h1>
-   <p> <b>Automatize. Otimize. Evolua.</b></p>
- <p class="subheadline"> Com o Power Automate, desenvolvo fluxos que automatizam tarefas repetitivas, conectam sistemas e eliminam etapas manuais que consomem tempo e geram retrabalho.</p>
- <p> <b>Fluxos que impulsionam a produtividade</b></p>
- <p class="subheadline"> Cada automação é pensada para trazer eficiência ao dia a dia, acelerando rotinas em áreas como Cadastro, Compras e Projetos. Isso significa menos cliques, menos erros — e mais foco no que realmente importa.</p>
- <p> <b>Digitalizando tarefas, potencializando pessoas</b></p>
- <p class="subheadline"> A tecnologia entra para simplificar. Ao transformar processos manuais em soluções inteligentes, libero tempo da equipe para tarefas mais estratégicas, promovendo não apenas eficiência, mas também valorização do capital humano.</p>
-    <div class="buttons">
-      <button class="btn glass scroll-to-projects">
-        Ver Projetos
-        <span class="arrow">↓</span>
-      </button>
+  <section class="hero">
+    <div class="container">
+      <h1><span>Power Automate</span> que transforma processos em produtividade</h1>
+      <p>Com o Power Automate, desenvolvo fluxos que automatizam tarefas repetitivas, conectam sistemas e eliminam etapas manuais que consomem tempo e geram retrabalho.</p>
+ <p> <b>Fluxos que impulsionam a produtividade.</p>
+      <p>Cada automação é pensada para trazer eficiência ao dia a dia, acelerando rotinas em áreas como Cadastro, Compras e Projetos. Isso significa menos cliques, menos erros — e mais foco no que realmente importa.</p>
+ <p> <b>Digitalizando tarefas, potencializando pessoas.</p>
+      <div class="buttons">
+        <button class="btn glass scroll-to-projects">Ver Projetos <span class="arrow">↓</span></button>
+      </div>
     </div>
-  </div>
-</section>
-  
+  </section>
+
   <section id="projetos" class="projects-section">
     <div class="container">
-      <h2 class="section-title">Power BI</h2>
-      <p class="section-subtitle">Com o Power Automate, conecto ferramentas como SharePoint, Outlook, SQL Server e Power Apps, entregando automações que impulsionam o desempenho operacional e estratégico..</p>
-      
+      <h2 class="section-title">Power Automate</h2>
+      <p class="section-subtitle">Dashboards e relatórios com foco em resultados e performance.</p>
+
       <div class="projects-grid">
-        <div class="project-card">
-          <h3 class="project-title">Relatório Financeiro 2</h3>
-          <p class="project-subtitle">Power BI</p>
+         <div class="project-card">
+          <h3 class="project-title">Analise de Vendas</h3>
+          <p class="project-subtitle">Power Automate</p>
           <p class="project-description">
-            Relatório completo para monitoramento de receitas, despesas e lucro, com indicadores mensais e projeções anuais.
+            Dashboard interativo para acompanhamento detalhado das vendas, com segmentação por área (Comercial, Financeiro e Logística), status dos pedidos (Em atraso, Em dia, A vencer) e análise temporal e geográfica. Permite uma visão consolidada e por setor do desempenho das operações comerciais
           </p>
-          <p class="project-impact">Impacto: Redução de 18% em custos após acompanhamento mensal.</p>
-          <a class="project-link" href="#" onclick="openImageModal('https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Fretes.png'); return false;">Ver relatório</a>
-        </div>
+          <p class="project-impact">Facilita a identificação de gargalos e ineficiências, especialmente em áreas com alto volume de pedidos em atraso e possível alta rotatividade. Suporta decisões estratégicas de priorização e alocação de recursos, contribuindo para uma melhoria de desempenho logístico e comercial.</p>
+           <a class="project-link" href="#" onclick="openImageModal(
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/SalesAnalytc.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/SalesAnalytc2.png',
+              ); return false;">Ver Imagens</a>
+          </div>
 
-        <div class="project-card">
-          <img class="project-logo" src="https://via.placeholder.com/100x100?text=Vendas" alt="Dashboard de Vendas">
-          <h3 class="project-title">Dashboard de Vendas</h3>
-          <p class="project-subtitle">Power BI</p>
-          <p class="project-description">
-            Painel dinâmico com metas, desempenho por canal e por equipe. Utiliza segmentações e comparativos por período.
-          </p>
-          <p class="project-impact">Impacto: Aumento de 12% nas conversões com base nas análises.</p>
-          <a class="project-link" href="#" onclick="openImageModal('https://via.placeholder.com/800x600?text=Dashboard+de+Vendas'); return false;">Ver relatório</a>
-        </div>
 
-        <div class="project-card">
-          <img class="project-logo" src="https://via.placeholder.com/100x100?text=RH" alt="Relatório de Pessoas">
-          <h3 class="project-title">Relatório de Pessoas</h3>
-          <p class="project-subtitle">Power BI</p>
+          <div class="project-card">
+          <h3 class="project-title">Monitoramento Logístico</h3>
+          <p class="project-subtitle">Power Automate</p>
           <p class="project-description">
-            Acompanhamento de headcount, turnover, admissões e desligamentos com indicadores por mês, área e função.
+            Painel focado no acompanhamento diário da operação logística, com filtros dinâmicos por filial, status do pedido e tipo de operação. Permite gestão em tempo real das etapas de separação, conferência e expedição, com visão por transportadora, prioridade e status financeiro.
           </p>
-          <p class="project-impact">Impacto: Identificação de gargalos em áreas com alto turnover.</p>
-          <a class="project-link" href="#" onclick="openImageModal('https://via.placeholder.com/800x600?text=Relatório+de+Pessoas'); return false;">Ver relatório</a>
-        </div>
-      </div>
+          <p class="project-impact">Reduziu falhas operacionais ao destacar pedidos críticos (atrasados ou não separados) e melhorou a previsibilidade logística. Otimizou a gestão da expedição ao aumentar a visibilidade dos pedidos em atraso, colaborando com ações proativas para manter o SLA.</p>
+           <a class="project-link" href="#" onclick="openImageModal(
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AnalisePedidos.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AnalisePedidos2.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/AnalisePedidos3.png',
+              ); return false;">Ver Imagens</a>          </div>
+
+        
+          <div class="project-card">
+          <h3 class="project-title">Monitor de Ocupação Logística</h3>
+          <p class="project-subtitle">Power Automate</p>
+          <p class="project-description">
+         Dashboard com visão em tempo real da ocupação por rua operacional no armazém, medindo percentual de uso, espaço livre em m³/pallet e apoio na previsão de chegada de contêineres. Indica ruas críticas com excesso de ocupação e facilita o redirecionamento de carga.
+          </p>
+          <p class="project-impact">Aumentou a eficiência da gestão de espaço ao reduzir riscos de saturação do armazém e garantir previsibilidade no recebimento. Apoia decisões estratégicas de movimentação e alocação de carga com base em indicadores visuais.</p>
+          <a class="project-link" href="#" onclick="openImageModal('https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Ocupa%C3%A7%C3%A3o.png'); return false;">Ver Imagens</a>          
+          </div>
+
+
+          <div class="project-card">
+          <h3 class="project-title">Monitor de Chamados TI</h3>
+          <p class="project-subtitle">Power Automate</p>
+          <p class="project-description">
+          Dashboard interno com indicadores de chamados por sistema, área afetada e técnico responsável. Monitora performance individual, taxa de atendimento no SLA, e consolida a gestão de horas e custos relacionados aos atendimentos.          </p>
+          </p>
+          <p class="project-impact">AO painel trouxe visibilidade clara sobre gargalos técnicos e setoriais, permitindo o redirecionamento ágil de recursos, melhora na eficiência operacional e acompanhamento da qualidade do suporte TI.</p>
+           <a class="project-link" href="#" onclick="openImageModal(
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/GLPI.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/GLPI2.png',
+              ); return false;">Ver Imagens</a>       
+          </div>
+
+
+        
+          <div class="project-card">
+          <h3 class="project-title">Dashboard de Análise de Fretes</h3>
+          <p class="project-subtitle">Power Automate</p>
+          <p class="project-description">
+          Painel dinâmico para análise de custos logísticos por transportadora, empresa e estado, com comparativos entre anos, cubagem e composição de taxas (ICMS, TDE, pedagio, etc.). Permite visão estratégica do desempenho das transportadoras e otimização do planejamento de fretes.
+          </p>
+          <p class="project-impact">Aumentou a eficiência da gestão de espaço ao reduzir riscos de saturação do armazém e garantir previsibilidade no recebimento. Apoia decisões estratégicas de movimentação e alocação de carga com base em indicadores visuais.</p>
+          <a class="project-link" href="#" onclick="openImageModal(
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Fretes.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/Fretes2.png',
+              ); return false;">Ver Imagens</a>
+          </div>
+
+          <div class="project-card">
+          <h3 class="project-title">Dashboard de Representantes – Vendas e Performance</h3>
+          <p class="project-subtitle">Power Automate</p>
+          <p class="project-description">
+          Painel completo de gestão de representantes comerciais, exibindo metas x realizado, clientes inativos ou sem atendimento recente, clientes sem vínculo comercial e vendas por linha e contratos. Inclui segmentações por cidade, estado, empresa e período.
+          </p>
+          <p class="project-impact">Aumentou a eficiência da força de vendas ao destacar lacunas de atendimento, potenciais de venda perdidos e áreas com baixo aproveitamento comercial. Suporte direto ao time de gestão e planejamento comercial.
+          </p>
+          <a class="project-link" href="#" onclick="openImageModal(
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/representantes.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/representantes2.png',
+            'https://raw.githubusercontent.com/SamuelJuniorrr/portifoliosamuel/refs/heads/main/representantes3.png',
+              ); return false;">Ver Imagens</a>
+          </div>      </div>
     </div>
   </section>
 
@@ -147,27 +221,41 @@
     </div>
   </footer>
 
-  <!-- Modal de Imagem -->
+  <!-- Modal com múltiplas imagens -->
   <div id="imageModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="popupImage">
+    <div class="carousel">
+      <button class="carousel-btn" onclick="prevImage()">‹</button>
+      <img class="modal-content" id="popupImage">
+      <button class="carousel-btn" onclick="nextImage()">›</button>
+    </div>
   </div>
 
-  <!-- Script do Modal -->
   <script>
-    function openImageModal(imageUrl) {
-      const modal = document.getElementById("imageModal");
-      const modalImg = document.getElementById("popupImage");
-      modal.style.display = "block";
-      modalImg.src = imageUrl;
+    let imageList = [];
+    let currentImageIndex = 0;
+
+    function openImageModal(...urls) {
+      imageList = urls;
+      currentImageIndex = 0;
+      document.getElementById("popupImage").src = imageList[0];
+      document.getElementById("imageModal").style.display = "block";
     }
 
-    // Fechar modal com X
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % imageList.length;
+      document.getElementById("popupImage").src = imageList[currentImageIndex];
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + imageList.length) % imageList.length;
+      document.getElementById("popupImage").src = imageList[currentImageIndex];
+    }
+
     document.querySelector(".close").onclick = function () {
       document.getElementById("imageModal").style.display = "none";
     };
 
-    // Fechar ao clicar fora da imagem
     window.onclick = function (event) {
       const modal = document.getElementById("imageModal");
       if (event.target === modal) {
@@ -177,15 +265,11 @@
   </script>
 
   <script>
-  document.querySelector('.scroll-to-projects').addEventListener('click', () => {
-    const target = document.querySelector('#projetos');
-    const offset = target.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({
-      top: offset - 50, // offset para considerar cabeçalho fixo
-      behavior: 'smooth'
+    document.querySelector('.scroll-to-projects').addEventListener('click', () => {
+      const target = document.querySelector('#projetos');
+      const offset = target.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: offset - 50, behavior: 'smooth' });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
